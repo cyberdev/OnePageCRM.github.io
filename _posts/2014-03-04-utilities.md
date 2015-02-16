@@ -76,7 +76,8 @@ This returns general user settings. These settings are also included in a call t
           "label": "Negotiation"
         }
       ],
-      "default_contact_type": "company"
+      "default_contact_type": "company",
+      "show_tidy_stream": false
     }
   }
 
@@ -84,13 +85,6 @@ This returns general user settings. These settings are also included in a call t
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
 
 
 <h3 id="currencies">Currencies</h3>

@@ -107,7 +107,7 @@ date: 2014-02-20 11:22:06
     <tr>
       <td><code>object</code></td>
       <td><code>settings</code></td>
-      <td>User's date format, reminders, currency, timezone, default contact type, popular countries and contacts listing size.</td>
+      <td>User's date format, reminders, currency, timezone, default contact type, show tidy stream, popular countries and contacts listing size.</td>
     </tr>
   </tbody>
 </table>
@@ -487,7 +487,8 @@ date: 2014-02-20 11:22:06
           "label": "Negotiation"
         }
       ],
-      "default_contact_type": "company"
+      "default_contact_type": "company",
+      "show_tidy_stream": false
     },
     "user": {
       "user": {
