@@ -30,22 +30,22 @@ Fire up a terminal and require this gem:
 
 Set the callback_url, app_id and secret variables:
 
-{% highlight ruby %}
+```
   callback = "http://yourapp/callback"
   app_id = "2a514a754809f926b2c0fe4bb2f5f29adfa2684331b433f468f8fa4b8dbb20d5"
   secret = "ac516ef825cfc0f57f0b679dc8c2a0cf6eb79163d9b74708a205a4504b4b2a48"
-{% endhighlight %}
+```
 
 Set up the client:
-{% highlight ruby %}
+```
  client = OAuth2::Client.new(app_id, secret, site: "http://app.onepagecrm.com/")
-{% endhighlight  %}
+```
 
 Get redirect URL
-{% hightlight ruby %}
+```
  client.auth_code.authorize_url(redirect_uri: callback)
   => "http://yourapp/oauth/authorize?response_type=code&client_id=2a514a754809f926b2c0fe4bb2f5f29adfa2684331b433f468f8fa4b8dbb20d5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fauth%2Ftodo%2Fcallback"
-{% endhightlight %}
+``````
 
 Redirect to this URL and authorize the app. You must be logged in to OnePageCRM for this to work.
 When you click authorize, you will be brought back to your callback url, with an access token parameter.
